@@ -27,6 +27,6 @@ Verified 8 October 2026:
 - All 7 automated boundary tests pass.
 - Desktop and phone browser tests pass: normal chat, outage fallback, guarded approval, rejection, preference persistence, portfolio display, architecture navigation, and a 390px viewport with no horizontal overflow.
 - `npm audit` reports zero vulnerabilities across production and development dependencies at verification time.
-- [Live deployment](https://coinpilot-ai-phase-1.vercel.app) responds successfully.
+- Both desktop and phone browser tests also pass against the [live deployment](https://coinpilot-ai-phase-1.vercel.app), including the real deployed Route Handler and Server Actions.
 
 No live model, financial action, or original Module 1 latency/accuracy target is claimed as tested. Accessibility checks cover semantic labels, visible focus styles, and exercised navigation; this is not a full WCAG audit.

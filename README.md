@@ -14,6 +14,8 @@ A working technical foundation for the chat-first crypto copilot defined in [Mod
 - [Deployment guide](docs/deployment.md)
 - [Assessment evidence](docs/assessment.md)
 
+![CoinPilot dashboard with sample market data, chat, portfolio, and proposal review](docs/preview.png)
+
 ## Run locally
 
 Use Node.js 22 or later.
@@ -35,6 +37,8 @@ npm start
 ```
 
 Browser tests use a dedicated local port (3147). Windows uses installed Microsoft Edge; on Linux, first run `npx playwright install --with-deps chromium`.
+
+Set `CAPTURE_SCREENSHOTS=1` when running browser tests to also save desktop and phone previews to `test-results/`.
 
 An optional GitHub Actions workflow is provided at `docs/ci-example.yml`. To enable it later, place it at `.github/workflows/ci.yml` using a GitHub authorization that permits workflow changes. Vercel deployment is already connected to this repository.
 
