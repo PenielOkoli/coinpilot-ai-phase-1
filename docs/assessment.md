@@ -20,6 +20,18 @@ Use the three suggested questions. Inspect the explicit source labels. Switch on
 
 ## Verification record
 
+Rechecked 23 October 2026 against the Phase 1 submission requirements:
+
+- The dedicated GitHub repository is public, and Vercel reports its production deployment as Ready.
+- The original Module 1 product brief was checked against the server/client mapping in `docs/architecture.md`.
+- ESLint, strict TypeScript, and all 7 input/security boundary tests pass.
+- The production build succeeds with the patched Next.js 16.4.2 dependency.
+- Both desktop and phone browser regression tests also pass against the patched local production build. `npm audit` reports zero vulnerabilities at verification time; the installed image dependency is `sharp@0.35.5`.
+- Both browser tests pass against the live Vercel URL, exercising desktop and phone layouts, chat, degraded responses, guarded approval, rejection, saved preferences, and architecture navigation.
+- The tracked environment template contains no credentials; local environment files and Vercel metadata are ignored. The provider module imports `server-only`.
+
+The earlier complete deployment verification remains below for reference.
+
 Verified 8 October 2026:
 
 - Production build succeeds locally and on Vercel.

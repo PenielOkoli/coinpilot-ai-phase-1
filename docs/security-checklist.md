@@ -39,3 +39,7 @@ Checked items describe this foundation. Unchecked items are release gates for la
 - [ ] Production model calls and exchange execution are not tested or enabled in this phase.
 
 Dependency versions are locked in `package-lock.json`. Run `npm audit` as part of dependency maintenance. Do not treat any lockfile or checklist as a permanent security guarantee.
+
+## October 2026 dependency maintenance
+
+The original Next.js 16.4.0 dependency was affected by the [14 October Next.js security advisory](https://nextjs.org/blog/nextjs-security-update-october-14-2026), including a Server Actions denial-of-service issue relevant to this app. The submission now pins Next.js 16.4.2, which includes the fixes released in 16.4.1. The lockfile is updated with the patched framework and its dependencies. Continue monitoring advisories after submission.
